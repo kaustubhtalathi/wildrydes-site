@@ -24,9 +24,6 @@ WildRydes.map = WildRydes.map || {};
                 "Access-Control-Allow-Origin": "*"
             },
             crossDomain : true,
-            xhrFields: {
-                withCredentials: true
-            },
             data: JSON.stringify({
                 PickupLocation: {
                     Latitude: pickupLocation.latitude,
