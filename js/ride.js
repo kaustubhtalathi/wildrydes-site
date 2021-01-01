@@ -22,6 +22,10 @@ WildRydes.map = WildRydes.map || {};
             headers: {
                 Authorization: authToken
             },
+            crossDomain : true,
+            xhrFields: {
+                withCredentials: true
+            },
             data: JSON.stringify({
                 PickupLocation: {
                     Latitude: pickupLocation.latitude,
